@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">learningFrench</string>
+
+    <string-array name="QUIZ">
+        <item>Easy</item>
+        <item>Intermediate</item>
+        <item>Hard</item>
+
+    </string-array>
+</resources>
