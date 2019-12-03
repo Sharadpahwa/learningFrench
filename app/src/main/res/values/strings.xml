@@ -1,10 +1,18 @@
 <resources>
-    <string name="app_name">learningFrench</string>
+
 
     <string-array name="QUIZ">
         <item>Easy</item>
         <item>Intermediate</item>
         <item>Hard</item>
 
+
+
     </string-array>
+    <style name="learningFrench" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
 </resources>

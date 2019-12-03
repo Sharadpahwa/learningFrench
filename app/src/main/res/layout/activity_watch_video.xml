@@ -104,7 +104,9 @@
         android:id="@+id/icFavorite"
         android:layout_width="62dp"
         android:layout_height="53dp"
-        app:srcCompat="@drawable/ic_favorite"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="595dp" />
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/user" />
 </androidx.constraintlayout.widget.ConstraintLayout>

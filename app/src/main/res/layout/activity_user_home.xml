@@ -6,48 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".userHome">
 
-    <TextView
-        android:id="@+id/tvPlayGames"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginLeft="81dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginRight="81dp"
-        android:text="Play Games"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvPlayQuiz"
-        app:layout_constraintEnd_toStartOf="@+id/tvPlayQuiz"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/ivPlayGames"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
 
-    <TextView
-        android:id="@+id/tvPlayQuiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:text="Play Quiz"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivWatchVideo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvWatchVideos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="308dp"
-        android:text="Watch Video"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPlayQuiz"
+        app:srcCompat="@drawable/pg" />
 
-    <TextView
-        android:id="@+id/tvNewWords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="New Words"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvWatchVideos"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/ivWatchVideo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivNewWords"
+        app:layout_constraintEnd_toEndOf="@+id/ivPlayGames"
+        app:layout_constraintStart_toStartOf="@+id/ivPlayGames"
+        app:layout_constraintTop_toBottomOf="@+id/ivPlayGames"
+        app:srcCompat="@drawable/wv" />
+
+    <ImageView
+        android:id="@+id/ivPlayQuiz"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivPlayGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pq" />
+
+    <ImageView
+        android:id="@+id/ivNewWords"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="138dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWatchVideo"
+        app:srcCompat="@drawable/nw" />
 </androidx.constraintlayout.widget.ConstraintLayout>
